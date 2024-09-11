@@ -13,6 +13,7 @@ import time
 headers = {'User-Agent':
 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 nse_url_gainers = 'https://www.nseindia.com/api/live-analysis-variations?index=gainers'
+nse_url_losers = 'https://www.nseindia.com/api/live-analysis-variations?index=losers'
 time.sleep(4)
 gainers = requests.get(nse_url_gainers,headers=headers,verify=False)
 time.sleep(4)
